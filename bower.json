@@ -1,24 +1,17 @@
 {
-  "name": "Adhoc Portfolio",
-  "homepage": "https://github.com/zelson71",
+  "name": "zelson71.github.io",
+  "homepage": "https://github.com/zelson71/zelson71.github.io",
   "authors": [
-    "Zach <zelson1@gmail.com>"
+    "zelson71 <zelson1@gmail.com>"
   ],
-  "description": "This is a portfolio built just for Zach ;)",
-  "main": "app.js",
+  "description": "Web Portfolio",
+  "main": "",
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
+    "custombox": "^4.0.1",
     "foundation-sites": "^6.3.1",
-    "normalize-css": "^6.0.0",
-    "typed.js": "^1.1.7",
     "jqcloud2": "^2.0.2",
-    "custombox": "^4.0.1"
+    "typed.js": "^2.0.11",
+    "normalize-css": "^8.0.1"
   }
 }

@@ -14,7 +14,9 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
 		background: rgb(50, 9, 163);
 }
-
+.txt-type > .txt{
+	border-right: 0.2rem solid #777;
+}
 .img-circle {
 		border-radius: 50%;
 }
