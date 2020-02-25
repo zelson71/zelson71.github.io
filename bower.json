@@ -2,9 +2,9 @@
   "name": "Adhoc Portfolio",
   "homepage": "https://github.com/zelson71",
   "authors": [
-    "developertenzin <tenzinphuljung7@gmail.com>"
+    "Zach <zelson1@gmail.com>"
   ],
-  "description": "This is a portfolio built just for Chicago Digital ;)",
+  "description": "This is a portfolio built just for Zach ;)",
   "main": "app.js",
   "license": "MIT",
   "ignore": [
