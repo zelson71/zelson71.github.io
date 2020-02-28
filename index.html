@@ -11,9 +11,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
 
-  <link href="bower_components/custombox/dist/custombox.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
@@ -29,16 +28,20 @@
 
     <section id="about">
       <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-sm-12 col-lg-8  columns text-center">
-          <img class="img-circle" src="assets/images/adhoc-profile-pic.jpg" alt="headshot">
+        <div class="col-lg-5"></div>
+        <div class="col-sm-12 col-lg-7 text-left">
+          <img class="mySlides img-circle" src="assets/images/prof1.jpg" alt="headshot">
+          <img class="mySlides img-circle" src="assets/images/prof2.jpg" alt="second?">
+          <img class="mySlides img-circle" src="assets/images/prof3.jpg" alt="third?">
           <div class="details">
             <h2>Hi, I'm Zach. I...<br>
               <span class="txt-type" data-wait="3000"
                 data-words='["am a Designer.","am a Full-Stack Web Developer.", "love everything about code.", "Am interested in Machine Learning.", "solve problems."]'><span>
             </h2>
-
           </div>
+
+
+
         </div>
       </div>
       <div class="row">
@@ -123,10 +126,7 @@
 
       <div class="row work-row">
         <!-- odd -->
-        <div class="small-12 medium-6 medium-push-6 columns">
-          <img src="assets/images/Latitude.jpg" alt="" height="480" width="640">
-        </div>
-        <div class="small-12 medium-5 medium-pull-7 columns">
+        <div class="col-sm-12 col-md-5">
           <div class="details details-ftm">
             <h3>Web-Design-Challenge</h3>
             <p class="platform">Web</p>
@@ -135,14 +135,18 @@
             <a class="my-button" target="_blank" href="#">Visit Website</a>
           </div>
         </div>
+        <div class="col-sm-12 col-md-7">
+          <img src="assets/images/Latitude-640x480.jpg" alt="">
+        </div>
       </div>
+
 
       <div class="row work-row">
         <!-- even -->
-        <div class="small-12 medium-6 columns">
+        <div class="col-sm-12 col-md-7 ">
           <img src="assets/images/pinatubo.jpg" alt="">
         </div>
-        <div class="small-12 medium-5 medium-offset-1 columns">
+        <div class="col-sm-12 col-md-5 ">
           <div class="details details-ftm">
             <h3>More To Come</h3>
             <p class="platform">Web</p>
@@ -155,10 +159,7 @@
 
       <div class="row work-row">
         <!-- odd -->
-        <div class="small-12 medium-6 medium-push-6 columns">
-          <img src="assets/images/pinatubo.jpg" alt="Volcano">
-        </div>
-        <div class="small-12 medium-5 medium-pull-7 columns">
+        <div class="col-sm-12 col-md-5">
           <div class="details details-ftm">
             <h3>More To Come</h3>
             <p class="platform">Web</p>
@@ -166,6 +167,9 @@
             <p></p>
             <a class="my-button" target="_blank" href="#">Visit Website</a>
           </div>
+        </div>
+        <div class="col-sm-12 col-md-7">
+          <img src="assets/images/pinatubo.jpg" alt="">
         </div>
       </div>
 
@@ -229,10 +233,25 @@
   </div>
   <script src="assets/scripts/app.js" charset="utf-8"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.min.js" charset="utf-8"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.min.js" charset="utf-8"></script> -->
   <script src="assets/scripts/main.js"></script>
+  <script>
+    var myIndex = 0;
+    carousel();
 
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 9000);
+    }
+  </script>
 </body>
 
 </html>

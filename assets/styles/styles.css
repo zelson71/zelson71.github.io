@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-		background: rgb(50, 9, 163);
+		background: #5438CF;
 }
 .txt-type > .txt{
 	border-right: 0.2rem solid #777;
@@ -145,12 +145,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /*** Experience ***/
 #experience {
-	background-color: #4c6d86;
+	background-color: #073F9D;
 	padding: 6em 4em 5.6em;
 }
 
 #experience h2 {
-	color: #fff;
+	color: #ED9800;
 	margin-bottom: .7em;
 }
 
@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #experience i {
-	color: rgb(255, 138, 89);
+	color: 260AA4;
 	font-size: 4em;
 }
 
@@ -248,11 +248,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #teaching h2 {
-	color: #595959;
+	color: #FFA400;
 }
 
 #teaching .tag-line {
-	color: #848282;
+	color: #C07B00;
 	font-size: 1.4em;
 }
 
@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 75vh;
     width: 75vh;
 	margin: 0 auto;
-	color: #9e0707;
+	color: #C09B00;
 }
 
 body, html{
